@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="?v=1">
+        <link rel="icon" type="image/png" href="assets/spinning-red-loading-circle.gif?v=1">
         <title>Redirecting...</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -24,6 +24,11 @@
                 --bXSznGBdbXVle: border-box;
                 --fCdPVlEMsrM: fit-content;
                 --wRpFxWPVlE: wrap;
+                --twTyeGHTPXVllEMsrM: 28px;
+                --sPNNgdVCrClImg: url(assets/spinning-red-loading-circle.gif);
+                --sPNNgdVCrClMsrM: 96px;
+                --sPNNgdVCrClBgsZ: contain;
+                --sPNNgdVCrClBgrPT: no-repeat;
             }
 
             *, *::before, *::after {
@@ -54,13 +59,29 @@
                 width: var(--fCdPVlEMsrM);
                 height: var(--fCdPVlEMsrM);
                 display: var(--fXDpmd);
-                flex-wrap: var(--wRpFxWPVlE);
+                flex-direction: var(--fXDrClmNMd);
+                gap: 12px;
+            }
+
+            .rDRtNglBLtEx {
+                font-size: var(--twTyeGHTPXVllEMsrM);
+                color: var(--bLCkHxcLr);
+            }
+
+            .lDNgsPNNgcRcl {
+                background-image: var(--sPNNgdVCrClImg);
+                background-size: var(--sPNNgdVCrClBgsZ);
+                background-repeat: var(--sPNNgdVCrClBgrPT);
+                background-position: var(--cTrDpMD);
+                width: var(--sPNNgdVCrClMsrM);
+                height: var(--sPNNgdVCrClMsrM);
             }
         </style>
     </head>
     <body class="mPcBDy">
         <div class="cTrmNCtNR">
-            <p>Redirecting...</p>
+            <div class="lDNgsPNNgcRcl"></div>
+            <p class="rDRtNglBLtEx">Redirecting...</p>
         </div>
     </body>
 </html>
